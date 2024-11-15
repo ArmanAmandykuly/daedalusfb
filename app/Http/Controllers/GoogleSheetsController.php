@@ -6,6 +6,7 @@ use Exception;
 use Google_Client;
 use Google_Service_Sheets;
 use Illuminate\Http\Request;
+use Log;
 
 class GoogleSheetsController extends Controller
 {
@@ -79,7 +80,7 @@ class GoogleSheetsController extends Controller
             $params
         );
 
-        echo $result;
+        // Log::info(str($result));
 
         return response()->json(['success' => true, 'updatedRange' => $result->getUpdates()->getUpdatedRange()]);
     }

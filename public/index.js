@@ -6,9 +6,11 @@ let feedbackData = {
 };
 
 function submitFeedback() {
-    const apiUrl = 'https://localhost:8000/api'; // Replace with your API endpoint
+    const apiUrl = 'https://daedalus.kz/api'; // Replace with your API endpoint
 
     readData()
+
+    alert("READING AND FETCHING")
 
     fetch(apiUrl, {
         method: 'POST',
@@ -20,11 +22,14 @@ function submitFeedback() {
     .then(response => {
         if (response.ok) {
             console.log('Feedback successfully sent');
+            alert("SUCCESSFUL")
         } else {
+            alert("ERROR")
             throw new Error('Failed to submit feedback');
         }
     })
     .catch(error => {
+        alert(error)
         console.error('Error:', error);
     });
 } 
