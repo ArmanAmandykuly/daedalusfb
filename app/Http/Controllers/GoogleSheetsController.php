@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class GoogleSheetsController extends Controller
 {
-    private $spreadsheetId = '1X0GfN32zQdr0jOb2DPnIpIKVS6PpLBxX8-v3gL8m_DQ';
+    private $spreadsheetId = '11Q1gVe03NUKZqGRq2mIeQSBSBdlRM8ID894R5A7sdaA';
 
     public function index()
     {
@@ -78,6 +78,8 @@ class GoogleSheetsController extends Controller
             $body,
             $params
         );
+
+        echo $result;
 
         return response()->json(['success' => true, 'updatedRange' => $result->getUpdates()->getUpdatedRange()]);
     }

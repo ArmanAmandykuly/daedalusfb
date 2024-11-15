@@ -87,7 +87,7 @@
               <div class="merging-together">
                 <button class="button">
                   <div class="loop-back"></div>
-                  <div class="div12">Оставить заявку</div>
+                  <div class="div12" id="scrollButton" onclick="scrollDown();">Оставить заявку</div>
                 </button>
               </div>
             </div>
@@ -287,7 +287,7 @@
               </div>
             </div>
           </div>
-          <div class="div30">
+          <div class="div30" id="targetSection">
             <img
               class="background-icon1"
               alt=""
@@ -328,7 +328,7 @@
                 <div class="parent3">
                   <img class="icon3" alt="" src="public/.svg" />
 
-                  <div class="frame">
+                  <div class="frame" id="target">
                     <div class="div33">+7 707 828 00 30</div>
                   </div>
                 </div>
@@ -465,6 +465,6 @@
         </div>
       </footer>
     </div>
+    <script src="{{url("index.js")}}"></script>
   </body>
-  <script src="index.js">
 </html>

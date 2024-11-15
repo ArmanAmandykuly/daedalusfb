@@ -34,3 +34,9 @@ function readData() {
     feedbackData.number = document.getElementsByClassName('input1').value
     feedbackData.service = document.getElementsByClassName('input2').value
 }
+
+function scrollDown() {
+    document.getElementById("target").scrollIntoView({
+        behavior: "smooth"
+    });
+};
