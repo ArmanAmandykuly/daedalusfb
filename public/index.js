@@ -10,7 +10,7 @@ function submitFeedback() {
 
     readData()
 
-    alert("READING AND FETCHING")
+    // alert("READING AND FETCHING")
 
     fetch(apiUrl, {
         method: 'POST',
@@ -22,9 +22,9 @@ function submitFeedback() {
     .then(response => {
         if (response.ok) {
             console.log('Feedback successfully sent');
-            alert("SUCCESSFUL")
+            // alert("SUCCESSFUL")
         } else {
-            alert("ERROR")
+            // alert("ERROR")
             throw new Error('Failed to submit feedback');
         }
     })

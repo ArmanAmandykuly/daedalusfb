@@ -316,7 +316,7 @@
                       <div class="instance-item"></div>
                     </div>
                   </div>
-                  <button class="button1" onclick="submitFeedback();">
+                  <button class="button1" onclick="event.preventDefault(); submitFeedback();">
                     <div class="item"></div>
                     <div class="div32">Оставить заявку</div>
                   </button>
