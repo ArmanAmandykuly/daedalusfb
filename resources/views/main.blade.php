@@ -16,6 +16,13 @@
     />
   </head>
   <body>
+    <div id="thankYouModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal();">&times;</span>
+        <h2>Спасибо!</h2>
+        <p>Ваш запрос был успешно отправлен. Мы свяжемся с вами в ближайшее время.</p>
+      </div>
+    </div>
     <div class="main">
       <section class="programs-title">
         <div class="div">
@@ -301,17 +308,17 @@
                 <form class="form-parent">
                   <div class="form">
                     <div class="container">
-                      <input class="input" placeholder="Имя" type="text" />
+                      <input class="input" id="input" placeholder="Имя" type="text" />
 
                       <div class="component-child"></div>
                     </div>
                     <div class="parent1">
-                      <input class="input1" placeholder="Телефон" type="text" />
+                      <input class="input1" id="input1" placeholder="Телефон" type="text" />
 
                       <div class="instance-child"></div>
                     </div>
                     <div class="parent2">
-                      <input class="input2" placeholder="Услуга" type="text" />
+                      <input class="input2" id="input2" placeholder="Услуга" type="text" />
 
                       <div class="instance-item"></div>
                     </div>
