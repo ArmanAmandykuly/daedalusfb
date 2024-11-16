@@ -51,7 +51,6 @@ class GoogleSheetsController extends Controller
 
     public function appendRow(Request $request)
     {
-        $request.
         $client = $this->getClient();
         $service = new Google_Service_Sheets($client);
 
@@ -80,8 +79,6 @@ class GoogleSheetsController extends Controller
             $body,
             $params
         );
-
-        Log::info(str($result));
 
         return response()->json(['success' => true, 'updatedRange' => $result->getUpdates()->getUpdatedRange()]);
     }
